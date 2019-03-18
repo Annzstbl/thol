@@ -15,21 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\CiCi%40summer\Desktop\软挑\code\th\main.cpp">
+    <ClCompile Include=".\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\CiCi%40summer\Desktop\软挑\code\th\car.cpp">
+    <ClCompile Include=".\car.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\CiCi%40summer\Desktop\软挑\code\th\road.cpp">
+    <ClCompile Include=".\road.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\CiCi%40summer\Desktop\软挑\code\th\car.h">
+    <ClInclude Include=".\car.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\CiCi%40summer\Desktop\软挑\code\th\road.h">
+    <ClInclude Include=".\road.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

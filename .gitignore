@@ -2,12 +2,13 @@
 *.exe
 *.cbp
 *.depend
+*.opendb
 bin/
 obj/
 .exe
 *.layout
 .layout
-
+main.cpp
  
  
  

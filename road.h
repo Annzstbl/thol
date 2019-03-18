@@ -1,10 +1,26 @@
 #pragma once
 #include "car.h"
-class road
+
+#include <vector>
+#include <unordered_set>
+
+class Car;
+class Cross;
+class Road
 {
-	int name_;
+public:
+
+private:
+	int id_;
 	int length_;
+	uint32_t max_speed_;
 	int num_lane_;
 	bool is_two_way_;
-	int num_car_;
+	
+
+	Cross* start_;
+	Cross* end_;
+	std::unordered_set<Car> cars_;
+
+
 };

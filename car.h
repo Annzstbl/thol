@@ -1,24 +1,24 @@
 #pragma once
-class car
+class Car
 {
 public:
-	car(int name, int estimated_time, int starting_point, int ending_point,int max_speed) {
+	Car(int name, int estimated_time, int starting_point, int ending_point,int max_speed) {
 		name_ = name;
 		estimated_time_ = estimated_time;
 		starting_point_ = starting_point;
 		ending_point_ = ending_point;
 		max_speed_ = max_speed;
 	}
-	int name_;				//³µÃû×Ö
-	int estimated_time_;	//Ô¤¼Æ³ö·¢Ê±¼ä
-	int actual_time_;		//Êµ¼Ê³ö·¢Ê±¼ä
-	int starting_point_;	//³ö·¢µØµã
-	int ending_point_;		//Í£Ö¹µØµã
-	unsigned int max_speed_;		//×î¸ßËÙ¶È
-	unsigned int actual_speed_;		//Êµ¼ÊËÙ¶È
-	//road *position_;	//µÀÂ·ºÅ
-	int road_order_;	//×ÓµÀÐòºÅ
-	int road_position_;	//Ëù´¦Î»ÖÃ
-	bool direction_;		//´ÓÐ¡Â·¿Úµ½´óÂ·¿ÚÎª1
+	int name_;				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	int estimated_time_;	//Ô¤ï¿½Æ³ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+	int actual_time_;		//Êµï¿½Ê³ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+	int starting_point_;	//ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½
+	int ending_point_;		//Í£Ö¹ï¿½Øµï¿½
+	unsigned int max_speed_;		//ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
+	unsigned int actual_speed_;		//Êµï¿½ï¿½ï¿½Ù¶ï¿½
+	//road *position_;	//ï¿½ï¿½Â·ï¿½ï¿½
+	int road_order_;	//ï¿½Óµï¿½ï¿½ï¿½ï¿½
+	int road_position_;	//ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+	bool direction_;		//ï¿½ï¿½Ð¡Â·ï¿½Úµï¿½ï¿½ï¿½Â·ï¿½ï¿½Îª1
 
 };

@@ -7,14 +7,13 @@ obj/
 .exe
 *.layout
 .layout
-.vs/
+
  
  
  
 Debug/
 ipch/
-*.sln
+
 *.db
-*.vcxproj
-*.filters
-ReadMe.txt
+
+

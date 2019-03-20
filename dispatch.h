@@ -2,10 +2,12 @@
 #include "car.h"
 #include "road.h"
 #include "cross.h"
+#include "loader.h"
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
 #include <string>
+
 using namespace std;
 class Dispatch
 {
@@ -17,6 +19,7 @@ public:
 		crossPath_ = crossPath;
 		answerPath_ = answerPath;
 	}
+	~Dispatch();
 	void Initiate_();							//read input files
 	int Read_car_();
 	int Read_road_();
@@ -30,9 +33,9 @@ private:
 	string crossPath_;
 	string answerPath_;
 	vector<Cross> d_crosses_;		//dispatch_crosses_;
-	vector<Car> d_cars_;			//all cars
+	vector<Car*> d_cars_;			//all cars
 	vector<Road> d_roads_;
-
+	Loader loader;
 	std::vector<int> d_cars_driving_;			//cars which are driving in road
 	std::vector<std::vector<int>> d_cars_route_;//cars route
 	std::unordered_map<int,int> d_cars_startingtime_;

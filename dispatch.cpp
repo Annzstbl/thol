@@ -4,16 +4,20 @@ using namespace std;
 
 int Dispatch::Read_car_()
 {
-	ifstream file_car(carPath_,ios::in);
-	string data_car;
-	int id, starting_cross, ending_cross, max_speed, estimated_time;
-	if (!file_car)
-		return 0;
-	while (getline(file_car, data_car))
+	vector<vector<int>> car_data ;
+	car_data = loader.load_txt(carPath_);
+	for(int i = 0 ; i < car_data.size() ; i++)
 	{
-		if (data_car[1] == '#')
-			break;
-		//sprintf(data_car,"")
+		Car* car = new Car(car_data[i]);
+		d_cars_.push_back(car);
 	}
+}
 
+Dispatch::~Dispatch()
+{
+	//delete cars
+	for(int i = 0 ; i < d_cars_.size(); i++)
+	{
+		delete d_cars_[i];
+	}
 }

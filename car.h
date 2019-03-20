@@ -1,5 +1,6 @@
 #pragma once
 #include "road.h"
+#include <cassert>
 #define CAR_NOT_DEPART 0	//car has not depart
 #define CAR_WAITING	1		//car is wating to go
 #define CAR_ENDING 2		//car has run in a cycle time
@@ -15,6 +16,17 @@ public:
 		ending_cross_ = ending_cross;
 		max_speed_ = max_speed;
 		status_ = CAR_WAITING;
+	}
+	
+	Car(const vector<int>& car_data)
+	{
+		assert(car_data.size() == 6);
+		id_ = car_data[0];
+		estimated_time_ = car_data[1];
+		starting_cross_ = car_data[2];
+		ending_cross_ = car_data[3];
+		max_speed_ = car_data[4];
+		status_ = car_data[5];
 	}
 private:
 	int id_;				//id

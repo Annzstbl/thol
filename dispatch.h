@@ -1,17 +1,21 @@
+#pragma once
 #include "car.h"
 #include "road.h"
 #include "cross.h"
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
+#include <string>
 using namespace std;
-
-class Dispatch()
+class Dispatch
 {
 public:
 	Dispatch();
-	Initiate();								//read input files
-	Boost_one();							//time = time + 1
+	void Initiate_();							//read input files
+	int Read_car_(string car_path);
+	int Read_road_();
+	int Read_cross_();
+	void Boost_one_();							//time = time + 1
 
 
 private:
@@ -24,4 +28,4 @@ private:
 	std::unordered_map<int,int> d_cars_startingtime_;
 
 	unsigned int time_;
-}
+};

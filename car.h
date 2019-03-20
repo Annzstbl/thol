@@ -4,6 +4,7 @@
 #define CAR_WAITING	1		//car is wating to go
 #define CAR_ENDING 2		//car has run in a cycle time
 #define CAR_ARRIVING 3		//car has arrived in destination
+class Road;
 class Car
 {
 public:
@@ -13,7 +14,7 @@ public:
 		starting_cross_ = starting_cross;
 		ending_cross_ = ending_cross;
 		max_speed_ = max_speed;
-		status = CAR_WAITING;
+		status_ = CAR_WAITING;
 	}
 private:
 	int id_;				//id
@@ -27,7 +28,7 @@ private:
 	int *route;				//route
 	int road_order_;
 	int road_position_;
-	bool direction_
-	int status;				//car status:  0 1 2 3;
+	bool direction_;
+	int status_;				//car status:  0 1 2 3;
 
 };

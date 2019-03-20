@@ -24,12 +24,24 @@
     <ClCompile Include=".\road.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\CiCi%40summer\Desktop\softc\code\th\cross.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\CiCi%40summer\Desktop\softc\code\th\dispatch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include=".\car.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include=".\road.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\CiCi%40summer\Desktop\softc\code\th\cross.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\CiCi%40summer\Desktop\softc\code\th\dispatch.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

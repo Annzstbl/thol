@@ -53,4 +53,4 @@ private:
 	Road *left_turn_;
 	Road *right_turn_;
 	Road *straight_;
-}
+};

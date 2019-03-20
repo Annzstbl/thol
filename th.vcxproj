@@ -146,11 +146,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\CiCi%40summer\Desktop\softc\code\th\cross.cpp" />
+    <ClCompile Include="..\..\..\..\..\CiCi%40summer\Desktop\softc\code\th\dispatch.cpp" />
     <ClCompile Include=".\car.cpp" />
     <ClCompile Include=".\main.cpp" />
     <ClCompile Include=".\road.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\CiCi%40summer\Desktop\softc\code\th\cross.h" />
+    <ClInclude Include="..\..\..\..\..\CiCi%40summer\Desktop\softc\code\th\dispatch.h" />
     <ClInclude Include=".\car.h" />
     <ClInclude Include=".\road.h" />
   </ItemGroup>
